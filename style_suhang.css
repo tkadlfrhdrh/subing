@@ -1,0 +1,141 @@
+:root{
+    --body-bg: pink;
+    --hamburger-bg: white;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background-color: var(--body-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hamburger-title{
+    color: white;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.hamburger-container{
+    margin-top: 150px;
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 650px;
+    background: var(--hamburger-bg);
+    position: relative;
+    bottom: 10px;
+    flex-direction: column;
+}
+
+.banner{
+    background-image: url("jejeju.jpg");
+    height: 300px;
+    width: 400px;
+    position: relative;
+    border-radius: 20px 20px 0px 0px;
+}
+.menu{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    position: relative;
+}
+body{
+    display: flex;
+    align-items: center;
+}
+
+.jeju{
+    border-radius: 300px;
+    transition: transform 1s ease-in-out;
+    align-items: center;
+    position: relative;
+    margin-top: 180px;
+    margin-left: 125px;
+}
+
+.jeju img{
+    border-radius: 300px;
+}
+.jeju:hover{
+    transform: scale(1.2);
+
+}
+.name{
+    text-align: center;
+}
+
+.btn{
+    background-color: yellow;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: transform 1s ease-in-out;
+}
+.btn:active{
+    transform: scale(1.5);
+}
+
+
+.hamburger-container{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+.lyrics {
+    overflow: scroll;
+    max-height: 100px;
+    margin-top: 100px;
+    align-items: flex-end;
+  }
+
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    transition: 0.5s;
+    background: skyblue;    
+    border-radius: 20px;
+}
+.hamburger::before,
+.hamburger::after{
+    content:"";
+}
+.hamburger{
+    top:40%;
+    margin-left: 97%;
+}
+.hamburger::before{
+    top: -15px;
+}
+.hamburger::after{
+    top: 15px;
+}
+.toggle:checked ~ .hamburger::after {
+    top:0;
+    transform: rotate(225deg);
+}
+.toggle:checked ~ .hamburger::before{
+    top: 0;
+    transform: rotate(135deg);
+}
+.toggle:checked ~ .hamburger{
+    background: white;
+}
+.toggle{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
